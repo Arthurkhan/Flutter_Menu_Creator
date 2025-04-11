@@ -45,11 +45,10 @@ android {
 
     defaultConfig {
         applicationId "com.example.menu_creator"
-        minSdkVersion 21 // Target Android 5.0+ for better tablet support
+        minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        multiDexEnabled true
     }
 
     buildTypes {
@@ -65,5 +64,4 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.multidex:multidex:2.0.1'
 }
